@@ -17,14 +17,18 @@ Commands written to [`barcodes.sh`](barcodes.sh).
 
 1. `B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN.fastq`:
 	* 350,588 read pairs in total:
-		* 95,722 (27.3%) contain the exact `AGACTC` barcode (at the 5' end of R1)
-		* 195,286 (55.7%) contain the exact `CATGAG` barcode
+		* 95,722 (27.3%) contain the exact `AGACTC` barcode (at the 5' end of R1):
+			* 43.9% of them, i.e. 42,050 contain additional `T` (`AGACTCT` barcode)
+		* 195,286 (55.7%) contain the exact `CATGAG` barcode:
+			* 10.4% of them, i.e. 20,344 contain contain additional `T` (`CATGAGT` barcode)
 		* 59,580 (17.0%) are barcode-free
 
 2. `B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq`:
 	* 609,886 read pairs in total:
-		 * 405,608 (66.5%) contain the exact `AGACTC` barcode
-		 * 161,856 (26.5%) contain the exact `CATGAG` barcode
+		 * 405,608 (66.5%) contain the exact `AGACTC` barcode:
+		 	* 97.1% of them, i.e. 393,911 contain additional `T` (`AGACTCT` barcode)
+		 * 161,856 (26.5%) contain the exact `CATGAG` barcode:
+		 	* 17.5% of them, i.e. 28,318 contain contain additional `T` (`CATGAGT` barcode)
 		 * 42,422 (7.0%) are barcode-free	
 
 

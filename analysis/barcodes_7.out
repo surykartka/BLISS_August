@@ -1,0 +1,128 @@
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -g ^AGACTCT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN_AGACTCT_30.fastq.gz -p barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN_AGACTCT_30.fastq.gz data/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN.fastq.gz data/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
+Finished in 4.89 s (14 us/read; 4.31 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            350,588
+  Read 1 with adapter:                  42,050 (12.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):        42,050 (12.0%)
+
+Total basepairs processed:    70,818,776 bp
+  Read 1:    35,409,388 bp
+  Read 2:    35,409,388 bp
+Total written (filtered):      8,199,750 bp (11.6%)
+  Read 1:     3,952,700 bp
+  Read 2:     4,247,050 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 42050 times.
+
+No. of allowed errors:
+0-7 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+7	42050	21.4	0	42050
+
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -g ^CATGAGT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN_CATGAGT_30.fastq.gz -p barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN_CATGAGT_30.fastq.gz data/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN.fastq.gz data/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
+Finished in 4.62 s (13 us/read; 4.55 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            350,588
+  Read 1 with adapter:                  20,344 (5.8%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):        20,344 (5.8%)
+
+Total basepairs processed:    70,818,776 bp
+  Read 1:    35,409,388 bp
+  Read 2:    35,409,388 bp
+Total written (filtered):      3,967,080 bp (5.6%)
+  Read 1:     1,912,336 bp
+  Read 2:     2,054,744 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CATGAGT; Type: anchored 5'; Length: 7; Trimmed: 20344 times.
+
+No. of allowed errors:
+0-7 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+7	20344	21.4	0	20344
+
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -g ^AGACTCT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN_AGACTCT_30.fastq.gz -p barcodes/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN_AGACTCT_30.fastq.gz data/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq.gz data/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
+Finished in 12.86 s (21 us/read; 2.85 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            609,886
+  Read 1 with adapter:                 393,911 (64.6%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       393,911 (64.6%)
+
+Total basepairs processed:   123,196,972 bp
+  Read 1:    61,598,486 bp
+  Read 2:    61,598,486 bp
+Total written (filtered):     76,812,645 bp (62.3%)
+  Read 1:    37,027,634 bp
+  Read 2:    39,785,011 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 393911 times.
+
+No. of allowed errors:
+0-7 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+7	393911	37.2	0	393911
+
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -g ^CATGAGT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN_CATGAGT_30.fastq.gz -p barcodes/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN_CATGAGT_30.fastq.gz data/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq.gz data/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
+Finished in 8.01 s (13 us/read; 4.57 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            609,886
+  Read 1 with adapter:                  28,318 (4.6%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):        28,318 (4.6%)
+
+Total basepairs processed:   123,196,972 bp
+  Read 1:    61,598,486 bp
+  Read 2:    61,598,486 bp
+Total written (filtered):      5,522,010 bp (4.5%)
+  Read 1:     2,661,892 bp
+  Read 2:     2,860,118 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CATGAGT; Type: anchored 5'; Length: 7; Trimmed: 28318 times.
+
+No. of allowed errors:
+0-7 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+7	28318	37.2	0	28318
+
