@@ -33,47 +33,50 @@ Commands written to [`barcodes.sh`](barcodes.sh).
 
 ## Mapping
 
-Mapping of barcode-trimmed with bowtie2 to GRCh38:
+Mapping of barcode- and polyA-trimmed reads with `bowtie2` to GRCh38 (commands at [`mapping.sh`](mapping.sh)) shows that only `B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN` reads starting with `AGACTC` (i.e., "RT" samples) are mappable (70.82% overall alignment rate). `FastQC` confirms that this is the only sample free of long adapters (and even poly-A).
+
+Full statistics from `bowtie2`:
 
 * `B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN.fastq`
 	* starting with `AGACTC` ("PR_3"):
 
 			95722 reads; of these:
 			  95722 (100.00%) were paired; of these:
-			    81143 (84.77%) aligned concordantly 0 times
-			    3928 (4.10%) aligned concordantly exactly 1 time
-			    10651 (11.13%) aligned concordantly >1 times
+			    80482 (84.08%) aligned concordantly 0 times
+			    4068 (4.25%) aligned concordantly exactly 1 time
+			    11172 (11.67%) aligned concordantly >1 times
 			    ----
-			    81143 pairs aligned concordantly 0 times; of these:
-			      469 (0.58%) aligned discordantly 1 time
+			    80482 pairs aligned concordantly 0 times; of these:
+			      366 (0.45%) aligned discordantly 1 time
 			    ----
-			    80674 pairs aligned 0 times concordantly or discordantly; of these:
-			      161348 mates make up the pairs; of these:
-			        156939 (97.27%) aligned 0 times
-			        1894 (1.17%) aligned exactly 1 time
-			        2515 (1.56%) aligned >1 times
-			18.02% overall alignment rate
+			    80116 pairs aligned 0 times concordantly or discordantly; of these:
+			      160232 mates make up the pairs; of these:
+			        155348 (96.95%) aligned 0 times
+			        2095 (1.31%) aligned exactly 1 time
+			        2789 (1.74%) aligned >1 times
+			18.85% overall alignment rate
 
 	* starting with `CATGAG` ("C1_3"):
 
 			195286 reads; of these:
 			  195286 (100.00%) were paired; of these:
-			    194522 (99.61%) aligned concordantly 0 times
-			    608 (0.31%) aligned concordantly exactly 1 time
-			    156 (0.08%) aligned concordantly >1 times
+			    194536 (99.62%) aligned concordantly 0 times
+			    592 (0.30%) aligned concordantly exactly 1 time
+			    158 (0.08%) aligned concordantly >1 times
 			    ----
-			    194522 pairs aligned concordantly 0 times; of these:
-			      29 (0.01%) aligned discordantly 1 time
+			    194536 pairs aligned concordantly 0 times; of these:
+			      18 (0.01%) aligned discordantly 1 time
 			    ----
-			    194493 pairs aligned 0 times concordantly or discordantly; of these:
-			      388986 mates make up the pairs; of these:
-			        388584 (99.90%) aligned 0 times
-			        244 (0.06%) aligned exactly 1 time
-			        158 (0.04%) aligned >1 times
-			0.51% overall alignment rate
+			    194518 pairs aligned 0 times concordantly or discordantly; of these:
+			      389036 mates make up the pairs; of these:
+			        388512 (99.87%) aligned 0 times
+			        243 (0.06%) aligned exactly 1 time
+			        281 (0.07%) aligned >1 times
+			0.53% overall alignment rate
 
-* ``B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq``
-	* starting with `AGACTC` ("RT"):
+
+* `B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq`
+	* starting with `AGACTC` ("RT", this is the best one):
 
 			405608 reads; of these:
 			  405608 (100.00%) were paired; of these:
@@ -95,19 +98,19 @@ Mapping of barcode-trimmed with bowtie2 to GRCh38:
 
 			161856 reads; of these:
 			  161856 (100.00%) were paired; of these:
-			    157422 (97.26%) aligned concordantly 0 times
-			    3574 (2.21%) aligned concordantly exactly 1 time
-			    860 (0.53%) aligned concordantly >1 times
+			    157564 (97.35%) aligned concordantly 0 times
+			    3415 (2.11%) aligned concordantly exactly 1 time
+			    877 (0.54%) aligned concordantly >1 times
 			    ----
-			    157422 pairs aligned concordantly 0 times; of these:
-			      263 (0.17%) aligned discordantly 1 time
+			    157564 pairs aligned concordantly 0 times; of these:
+			      207 (0.13%) aligned discordantly 1 time
 			    ----
-			    157159 pairs aligned 0 times concordantly or discordantly; of these:
-			      314318 mates make up the pairs; of these:
-			        313201 (99.64%) aligned 0 times
-			        597 (0.19%) aligned exactly 1 time
-			        520 (0.17%) aligned >1 times
-			3.25% overall alignment rate
+			    157357 pairs aligned 0 times concordantly or discordantly; of these:
+			      314714 mates make up the pairs; of these:
+			        313234 (99.53%) aligned 0 times
+			        749 (0.24%) aligned exactly 1 time
+			        731 (0.23%) aligned >1 times
+			3.24% overall alignment rate
 
 ---
 
