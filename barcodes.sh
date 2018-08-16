@@ -14,9 +14,9 @@ cutadapt -g ^AGACTC -g ^CATGAG -e 0 --overlap 6 --minimum-length 30 --discard-tr
 
 
 
-cutadapt -g ^AGACTCT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/${C1_R1}_AGACTCT_30.fastq.gz -p barcodes/${C1_R2}_AGACTCT_30.fastq.gz data/${C1_R1}.fastq.gz data/${C1_R2}.fastq.gz > analysis/barcodes.out
-cutadapt -g ^CATGAGT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/${C1_R1}_CATGAGT_30.fastq.gz -p barcodes/${C1_R2}_CATGAGT_30.fastq.gz data/${C1_R1}.fastq.gz data/${C1_R2}.fastq.gz >> analysis/barcodes.out
+cutadapt -g ^AGACTCT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/${C1_R1}_AGACTCT_30.fastq.gz -p barcodes/${C1_R2}_AGACTCT_30.fastq.gz data/${C1_R1}.fastq.gz data/${C1_R2}.fastq.gz > analysis/barcodes_7.out
+cutadapt -g ^CATGAGT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/${C1_R1}_CATGAGT_30.fastq.gz -p barcodes/${C1_R2}_CATGAGT_30.fastq.gz data/${C1_R1}.fastq.gz data/${C1_R2}.fastq.gz >> analysis/barcodes_7.out
 
-cutadapt -g ^AGACTCT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/${NB_R1}_AGACTCT_30.fastq.gz -p barcodes/${NB_R2}_AGACTCT_30.fastq.gz data/${NB_R1}.fastq.gz data/${NB_R2}.fastq.gz >> analysis/barcodes.out
-cutadapt -g ^CATGAGT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/${NB_R1}_CATGAGT_30.fastq.gz -p barcodes/${NB_R2}_CATGAGT_30.fastq.gz data/${NB_R1}.fastq.gz data/${NB_R2}.fastq.gz >> analysis/barcodes.out
+cutadapt -g ^AGACTCT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/${NB_R1}_AGACTCT_30.fastq.gz -p barcodes/${NB_R2}_AGACTCT_30.fastq.gz data/${NB_R1}.fastq.gz data/${NB_R2}.fastq.gz >> analysis/barcodes_7.out
+cutadapt -g ^CATGAGT -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/${NB_R1}_CATGAGT_30.fastq.gz -p barcodes/${NB_R2}_CATGAGT_30.fastq.gz data/${NB_R1}.fastq.gz data/${NB_R2}.fastq.gz >> analysis/barcodes_7.out
 
