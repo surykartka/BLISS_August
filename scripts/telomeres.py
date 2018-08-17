@@ -2,7 +2,7 @@ from __future__ import print_function
 from Bio import SeqIO
 import os
 
-def count_telo(seq, telomeres=['TTAGGGTTAGGGTTAGGG', 'CCCTAA']):
+def count_telo(seq, telomeres=['TTAGGG', 'CCCTAA']):
 	n = 0
 	for telo in telomeres:
 		m = seq.count(telo)

@@ -119,23 +119,29 @@ Telomeric repeats do not occur often in the reads.
 Below are number of reads with at least three repeats (as counted by [`telomeres.py`](scripts/telomeres.py)):
 
 * "PR_3" sample:
-	* 0 repeats: 93,908 reads
-	* 1: 1,114
-	* 2: 486
-	* **3: 214**
+	* 0 repeats (summed from both paired reads): 93499 reads
+	* 1: 1055
+	* 2: 326
+	* 3: 146
+	* **4: 409**
+	* **5: 79**
+	* **6: 208**
 * "RT" sample:
-	* 0: 395,522
-	* 1: 9,878
-	* 2: 199
-	* **3: 6**
-	* **4: 2**
-	* **5: 1**
+	* 0: 388206
+	* 1: 14565
+	* 2: 2759
+	* 3: 48
+	* **4: 26**
+	* **6: 2**
+	* **9: 1**
+	* **14: 1**
 * `B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq` with no barcodes:
-	* 0: 41819
-	* 1: 592
-	* 2: 9
-	* **7: 1**
-	* **17: 1**
+	* 0: 41574
+	* 1: 749
+	* 2: 95
+	* 3: 2
+	* **11: 1**
+	* **26: 1**
 
 ---
 
