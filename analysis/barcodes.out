@@ -212,3 +212,35 @@ Overview of removed sequences
 length	count	expect	max.err	error counts
 6	161856	148.9	0	161856
 
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN_AGACTC_30.fastq.gz -p barcodes/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN_AGACTC_30.fastq.gz data/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq.gz data/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
+Finished in 13.07 s (21 us/read; 2.80 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            609,886
+  Read 1 with adapter:                 405,608 (66.5%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       405,608 (66.5%)
+
+Total basepairs processed:   123,196,972 bp
+  Read 1:    61,598,486 bp
+  Read 2:    61,598,486 bp
+Total written (filtered):     79,499,168 bp (64.5%)
+  Read 1:    38,532,760 bp
+  Read 2:    40,966,408 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AGACTC; Type: anchored 5'; Length: 6; Trimmed: 405608 times.
+
+No. of allowed errors:
+0-6 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+6	405608	148.9	0	405608
+

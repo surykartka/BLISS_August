@@ -31,7 +31,7 @@ Commands written to [`barcodes.sh`](barcodes.sh).
 		 	* 17.5% of them, i.e. 28,318 contain contain additional `T` (`CATGAGT` barcode)
 		 * 42,422 (7.0%) are barcode-free	
 
-## Mapping
+## Mapping to GRCh38
 
 Mapping of barcode- and polyA-trimmed reads with `bowtie2` to GRCh38 (commands at [`mapping.sh`](mapping.sh)) shows that only `B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN` reads starting with `AGACTC` (i.e., "RT" samples) are mappable (70.82% overall alignment rate). `FastQC` confirms that this is the only sample free of long adapters (and even poly-A).
 
@@ -111,6 +111,31 @@ Full statistics from `bowtie2`:
 			        749 (0.24%) aligned exactly 1 time
 			        731 (0.23%) aligned >1 times
 			3.24% overall alignment rate
+
+## Telomeres
+
+Telomeric repeats do not occur often in the reads. 
+
+Below are number of reads with at least three repeats (as counted by [`telomeres.py`](scripts/telomeres.py)):
+
+* "PR_3" sample:
+	* 0 repeats: 93,908 reads
+	* 1: 1,114
+	* 2: 486
+	* **3: 214**
+* "RT" sample:
+	* 0: 395,522
+	* 1: 9,878
+	* 2: 199
+	* **3: 6**
+	* **4: 2**
+	* **5: 1**
+* `B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq` with no barcodes:
+	* 0: 41819
+	* 1: 592
+	* 2: 9
+	* **7: 1**
+	* **17: 1**
 
 ---
 
