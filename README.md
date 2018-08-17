@@ -114,7 +114,7 @@ Full statistics from `bowtie2`:
 
 ## Telomeres
 
-Telomeric repeats do not occur often in the reads. 
+Telomeric repeats do not occur often in the reads (commands written to [`telomeres.sh`](telomeres.sh)). 
 
 Below are number of reads with at least three repeats (as counted by [`telomeres.py`](scripts/telomeres.py)):
 
