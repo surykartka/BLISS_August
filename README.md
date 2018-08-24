@@ -158,9 +158,11 @@ Statistics for the samples:
 		* 36,078 (60.6%) reads have index 12 (rev complement) in R1
 * `B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq`:
 	* starting with `AGACTC` ("RT"):
-		* 118,774 (29.3%) reads have index 6 (rev complement) in R1
+		* 118,774 (29.3%) reads have index 6 (rev complement) in R1:
+			* out of the reads with no adapter, 90.26% can be mapped to the human genome
 	* starting with `CATGAG` ("NB_3"):
-		* 140,254 (86.7%) reads have index 6 (rev complement) in R1
+		* 140,254 (86.7%) reads have index 6 (rev complement) in R1:
+			* out of the reads with no adapter, 22.89% can be mapped to the human genome
 	* with no barcode:
 		* 33,008 (77.8%) reads have index 6 (rev complement) in R1
 
