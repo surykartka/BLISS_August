@@ -143,6 +143,23 @@ Below are number of reads with at least three repeats (as counted by [`telomeres
 	* **11: 1**
 	* **26: 1**
 
+## Adapters
+
+We checked if the reads contain adapter sequences, indicative of dimer formation (commands written to [`adapters.sh`](adapters.sh)).
+
+Statistics for the samples:
+
+* `B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN.fastq`:
+	* starting with `AGACTC` ("PR_3"):
+		* 41,145 (43.0%) reads have index 12 (rev complement) in R1
+	* starting with `CATGAG` ("C1_3"):
+		* 170,865 (87.5%) reads have index 12 (rev complement) in R1
+* `B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq`:
+	* starting with `AGACTC` ("RT"):
+		* 118,774 (29.3%) reads have index 6 (rev complement) in R1
+	* starting with `CATGAG` ("NB_3"):
+		* 140,254 (86.7%) reads have index 6 (rev complement) in R1
+
 ---
 
 > Ania

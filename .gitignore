@@ -1,3 +1,4 @@
 hg_mapping/
 barcodes/*fastq
 barcodes_fasta/
+adapters/*
