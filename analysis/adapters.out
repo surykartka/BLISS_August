@@ -1,23 +1,23 @@
 This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -g TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG --discard-trimmed --minimum-length 6 -o adapters/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN_AGACTC_index12.fastq.gz -p adapters/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN_AGACTC_index12.fastq.gz barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN_AGACTC_30.fastq.gz barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN_AGACTC_30.fastq.gz
+Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -g TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -A TCGGACTGTAGAACTCTGAACGTGTAGATCTCGGTGGTCGCCGTATCATT -G TCGGACTGTAGAACTCTGAACGTGTAGATCTCGGTGGTCGCCGTATCATT --discard-trimmed --minimum-length 6 -o adapters/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN_AGACTC_index12_pcrprimer.fastq.gz -p adapters/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN_AGACTC_index12_pcrprimer.fastq.gz barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN_AGACTC_30.fastq.gz barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN_AGACTC_30.fastq.gz
 Running on 1 core
-Trimming 2 adapters with at most 10.0% errors in paired-end legacy mode ...
-Finished in 3.64 s (38 us/read; 1.58 M reads/minute).
+Trimming 4 adapters with at most 10.0% errors in paired-end mode ...
+Finished in 6.56 s (69 us/read; 0.87 M reads/minute).
 
 === Summary ===
 
 Total read pairs processed:             95,722
   Read 1 with adapter:                  41,145 (43.0%)
-  Read 2 with adapter:                       0 (0.0%)
-Pairs that were too short:              27,401 (28.6%)
-Pairs written (passing filters):        54,577 (57.0%)
+  Read 2 with adapter:                  49,297 (51.5%)
+Pairs that were too short:              27,496 (28.7%)
+Pairs written (passing filters):        43,364 (45.3%)
 
 Total basepairs processed:    18,761,512 bp
   Read 1:     9,093,590 bp
   Read 2:     9,667,922 bp
-Total written (filtered):     10,697,092 bp (57.0%)
-  Read 1:     5,184,815 bp
-  Read 2:     5,512,277 bp
+Total written (filtered):      8,499,344 bp (45.3%)
+  Read 1:     4,119,580 bp
+  Read 2:     4,379,764 bp
 
 === First read: Adapter 1 ===
 
@@ -144,745 +144,141 @@ length	count	expect	max.err	error counts
 11	1	0.0	1	0 1
 53	1	0.0	5	1
 
-This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -g TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG --discard-trimmed --minimum-length 6 -o adapters/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN_CATGAG_index12.fastq.gz -p adapters/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN_CATGAG_index12.fastq.gz barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN_CATGAG_30.fastq.gz barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN_CATGAG_30.fastq.gz
-Running on 1 core
-Trimming 2 adapters with at most 10.0% errors in paired-end legacy mode ...
-Finished in 6.56 s (34 us/read; 1.79 M reads/minute).
+=== Second read: Adapter 3 ===
 
-=== Summary ===
-
-Total read pairs processed:            195,286
-  Read 1 with adapter:                 170,865 (87.5%)
-  Read 2 with adapter:                       0 (0.0%)
-Pairs that were too short:              72,296 (37.0%)
-Pairs written (passing filters):        24,421 (12.5%)
-
-Total basepairs processed:    38,276,056 bp
-  Read 1:    18,552,170 bp
-  Read 2:    19,723,886 bp
-Total written (filtered):      4,786,516 bp (12.5%)
-  Read 1:     2,319,995 bp
-  Read 2:     2,466,521 bp
-
-=== First read: Adapter 1 ===
-
-Sequence: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG; Type: regular 3'; Length: 63; Trimmed: 170820 times.
+Sequence: TCGGACTGTAGAACTCTGAACGTGTAGATCTCGGTGGTCGCCGTATCATT; Type: regular 3'; Length: 50; Trimmed: 48993 times.
 
 No. of allowed errors:
-0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50 bp: 5
 
 Bases preceding removed adapters:
-  A: 20.4%
-  C: 29.3%
-  G: 25.4%
-  T: 23.9%
-  none/other: 1.0%
+  A: 2.8%
+  C: 2.6%
+  G: 94.3%
+  T: 0.3%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "G" extremely often.
+    The provided adapter sequence may be incomplete.
+    To fix the problem, add "G" to the beginning of the adapter sequence.
 
 Overview of removed sequences
 length	count	expect	max.err	error counts
-3	63	3051.3	0	63
-4	29	762.8	0	29
-5	17	190.7	0	17
-6	16	47.7	0	16
-7	7	11.9	0	7
-8	5	3.0	0	5
-9	9	0.7	0	5 4
-10	7	0.2	1	5 2
-11	8	0.0	1	7 1
-12	11	0.0	1	10 1
-13	24	0.0	1	22 2
-14	11	0.0	1	9 2
-15	13	0.0	1	13
-16	10	0.0	1	7 3
-17	14	0.0	1	13 1
-18	25	0.0	1	21 4
-19	21	0.0	1	15 6
-20	27	0.0	2	18 4 5
-21	20	0.0	2	17 2 1
-22	16	0.0	2	12 2 2
-23	9	0.0	2	7 2
-24	21	0.0	2	16 2 3
-25	17	0.0	2	15 2
-26	13	0.0	2	11 2
-27	17	0.0	2	14 3
-28	20	0.0	2	18 1 1
-29	22	0.0	2	14 5 3
-30	23	0.0	3	16 4 3
-31	33	0.0	3	24 4 3 2
-32	30	0.0	3	19 5 4 2
-33	26	0.0	3	18 6 0 2
-34	28	0.0	3	16 6 1 5
-35	35	0.0	3	26 4 3 2
-36	36	0.0	3	28 5 3
-37	46	0.0	3	36 5 0 5
-38	40	0.0	3	23 8 3 6
-39	53	0.0	3	39 6 2 2 4
-40	66	0.0	4	43 7 9 4 3
-41	59	0.0	4	39 6 4 7 3
-42	80	0.0	4	52 8 11 3 6
-43	94	0.0	4	66 8 10 6 4
-44	92	0.0	4	58 8 10 6 10
-45	103	0.0	4	78 11 7 3 4
-46	108	0.0	4	77 17 5 7 2
-47	132	0.0	4	90 22 7 5 8
-48	130	0.0	4	102 10 4 8 6
-49	145	0.0	4	118 18 5 2 2
-50	155	0.0	5	134 16 3 0 0 2
-51	158	0.0	5	134 15 6 2 0 1
-52	157	0.0	5	130 15 5 3 2 2
-53	140	0.0	5	114 16 5 5
-54	129	0.0	5	104 14 5 1 2 3
-55	94	0.0	5	77 9 4 0 3 1
-56	82	0.0	5	63 9 3 1 2 3 1
-57	76	0.0	5	59 9 4 3 1
-58	79	0.0	5	68 9 2
-59	73	0.0	5	60 7 0 2 1 3
-60	70	0.0	6	55 5 4 1 4 1
-61	56	0.0	6	51 2 0 1 1 0 1
-62	45	0.0	6	36 3 3 2 0 1
-63	36	0.0	6	28 2 1 0 2 1 2
-64	34	0.0	6	24 3 2 1 3 0 1
-65	18	0.0	6	16 0 0 1 1
-66	33	0.0	6	14 3 5 5 4 1 1
-67	46	0.0	6	30 3 3 2 6 1 1
-68	50	0.0	6	25 10 3 2 2 6 2
-69	54	0.0	6	26 4 8 4 5 4 3
-70	84	0.0	6	51 9 6 2 6 6 4
-71	132	0.0	6	81 15 11 3 7 3 12
-72	158	0.0	6	97 19 16 5 5 5 11
-73	192	0.0	6	125 18 11 12 9 11 6
-74	352	0.0	6	256 33 15 16 10 12 10
-75	448	0.0	6	345 40 23 11 9 4 16
-76	515	0.0	6	369 47 25 16 16 22 20
-77	609	0.0	6	449 57 30 16 19 16 22
-78	765	0.0	6	543 80 43 21 15 30 33
-79	1251	0.0	6	963 114 46 29 31 40 28
-80	2224	0.0	6	1746 222 91 47 39 37 42
-81	3565	0.0	6	2977 304 92 53 46 48 45
-82	5688	0.0	6	4833 503 147 79 35 52 39
-83	7806	0.0	6	6714 654 210 81 50 47 50
-84	9037	0.0	6	7734 818 212 92 62 67 52
-85	8068	0.0	6	6853 738 204 98 46 79 50
-86	15439	0.0	6	13460 1283 298 126 63 125 84
-87	17545	0.0	6	15447 1415 316 116 53 107 91
-88	10817	0.0	6	9497 873 197 61 40 91 58
-89	10413	0.0	6	9127 855 199 67 47 72 46
-90	13977	0.0	6	12405 1064 243 95 49 72 49
-91	12208	0.0	6	10865 954 193 60 41 57 38
-92	10295	0.0	6	9170 779 166 58 34 42 46
-93	19814	0.0	6	17338 1645 366 159 86 140 80
-94	14350	0.0	6	12478 1228 294 109 66 101 74
-95	1652	0.0	6	1438 149 32 11 3 8 11
+3	3264	1495.7	0	3264
+4	2089	373.9	0	2089
+5	942	93.5	0	942
+6	320	23.4	0	320
+7	578	5.8	0	578
+8	402	1.5	0	402
+9	430	0.4	0	380 50
+10	380	0.1	1	272 108
+11	340	0.0	1	316 24
+12	738	0.0	1	644 94
+13	333	0.0	1	239 94
+14	1358	0.0	1	1088 270
+15	871	0.0	1	495 376
+16	95	0.0	1	87 8
+17	375	0.0	1	92 283
+18	89	0.0	1	80 9
+19	114	0.0	1	105 9
+20	94	0.0	2	75 11 8
+21	325	0.0	2	98 23 204
+22	111	0.0	2	99 11 1
+23	144	0.0	2	128 11 5
+24	69	0.0	2	60 5 4
+25	117	0.0	2	95 12 10
+26	271	0.0	2	229 25 17
+27	174	0.0	2	156 12 6
+28	290	0.0	2	263 20 7
+29	218	0.0	2	195 14 5 4
+30	141	0.0	3	120 7 8 6
+31	219	0.0	3	191 15 8 5
+32	331	0.0	3	264 38 18 11
+33	114	0.0	3	94 8 5 7
+34	237	0.0	3	209 17 3 8
+35	197	0.0	3	164 20 10 3
+36	238	0.0	3	212 14 8 4
+37	96	0.0	3	82 8 4 2
+38	219	0.0	3	179 20 12 8
+39	641	0.0	3	531 59 29 18 4
+40	200	0.0	4	163 17 9 6 5
+41	148	0.0	4	130 9 8 1
+42	89	0.0	4	70 10 4 3 2
+43	111	0.0	4	94 11 4 2
+44	71	0.0	4	61 4 4 2
+45	99	0.0	4	81 7 5 3 3
+46	117	0.0	4	91 11 7 5 3
+47	130	0.0	4	112 6 6 3 2 1
+48	171	0.0	4	148 14 5 3 1
+49	100	0.0	4	74 18 4 1 3
+50	87	0.0	5	73 8 2 1 2 1
+51	99	0.0	5	83 9 2 2 2 1
+52	81	0.0	5	64 11 4 1 1
+53	68	0.0	5	49 8 6 2 2 1
+54	72	0.0	5	63 2 3 2 0 2
+55	87	0.0	5	72 12 1 2
+56	63	0.0	5	54 4 2 2 1
+57	89	0.0	5	77 8 1 1 1 1
+58	173	0.0	5	136 19 4 5 2 7
+59	176	0.0	5	144 16 7 2 5 2
+60	84	0.0	5	72 6 3 1 1 1
+61	90	0.0	5	64 15 5 2 1 3
+62	22	0.0	5	17 4 0 0 0 1
+63	36	0.0	5	29 3 3 0 0 1
+64	50	0.0	5	43 5 0 1 0 1
+65	12	0.0	5	7 2 1 0 2
+66	16	0.0	5	11 2 1 2
+67	20	0.0	5	12 5 2 0 0 1
+68	5	0.0	5	4 1
+69	16	0.0	5	11 2 2 0 0 1
+70	16	0.0	5	12 1 1 1 1
+71	9	0.0	5	4 2 1 0 1 1
+72	13	0.0	5	10 1 0 1 0 1
+73	18	0.0	5	15 1 1 1
+74	26	0.0	5	18 2 4 2
+75	22	0.0	5	16 5 0 0 1
+76	33	0.0	5	24 5 2 0 2
+77	122	0.0	5	106 9 6 1
+78	151	0.0	5	120 19 3 3 3 3
+79	336	0.0	5	281 26 12 6 6 5
+80	1404	0.0	5	1210 123 42 12 11 6
+81	263	0.0	5	228 19 8 2 1 5
+82	143	0.0	5	120 10 6 5 0 2
+83	173	0.0	5	140 24 4 1 2 2
+84	245	0.0	5	212 18 7 3 3 2
+85	139	0.0	5	108 18 5 3 3 2
+86	171	0.0	5	138 15 6 4 4 4
+87	280	0.0	5	229 28 8 8 4 3
+88	3691	0.0	5	3152 298 114 56 42 29
+89	10311	0.0	5	8728 809 376 175 120 103
+90	11657	0.0	5	9816 976 428 218 132 87
+91	24	0.0	5	7 6 4 0 4 3
+92	17	0.0	5	7 3 2 1 1 3
+93	16	0.0	5	5 4 4 1 0 2
+94	25	0.0	5	8 6 3 4 1 3
+95	31	0.0	5	7 6 4 8 3 3
+96	42	0.0	5	11 7 4 10 4 6
+97	24	0.0	5	10 0 3 3 4 4
+98	16	0.0	5	4 3 2 3 0 4
+99	14	0.0	5	5 2 4 1 1 1
+100	3	0.0	5	1 1 0 0 0 1
+101	12	0.0	5	3 2 2 3 2
 
-=== First read: Adapter 2 ===
+=== Second read: Adapter 4 ===
 
-Sequence: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG; Type: regular 5'; Length: 63; Trimmed: 45 times.
+Sequence: TCGGACTGTAGAACTCTGAACGTGTAGATCTCGGTGGTCGCCGTATCATT; Type: regular 5'; Length: 50; Trimmed: 304 times.
 
 No. of allowed errors:
-0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50 bp: 5
 
 Overview of removed sequences
 length	count	expect	max.err	error counts
-3	18	3051.3	0	18
-4	23	762.8	0	23
-5	2	190.7	0	2
-12	1	0.0	1	0 1
-56	1	0.0	5	0 0 0 0 0 1
+3	275	1495.7	0	275
+4	21	373.9	0	21
+5	6	93.5	0	6
+6	1	23.4	0	1
+7	1	5.8	0	1
 
-This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -g TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --discard-trimmed --minimum-length 6 -o adapters/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN_AGACTC_index6.fastq.gz -p adapters/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN_AGACTC_index6.fastq.gz barcodes/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN_AGACTC_30.fastq.gz barcodes/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN_AGACTC_30.fastq.gz
-Running on 1 core
-Trimming 2 adapters with at most 10.0% errors in paired-end legacy mode ...
-Finished in 17.80 s (44 us/read; 1.37 M reads/minute).
-
-=== Summary ===
-
-Total read pairs processed:            405,608
-  Read 1 with adapter:                 118,774 (29.3%)
-  Read 2 with adapter:                       0 (0.0%)
-Pairs that were too short:               8,046 (2.0%)
-Pairs written (passing filters):       286,834 (70.7%)
-
-Total basepairs processed:    79,499,168 bp
-  Read 1:    38,532,760 bp
-  Read 2:    40,966,408 bp
-Total written (filtered):     56,219,464 bp (70.7%)
-  Read 1:    27,249,230 bp
-  Read 2:    28,970,234 bp
-
-=== First read: Adapter 1 ===
-
-Sequence: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG; Type: regular 3'; Length: 63; Trimmed: 108662 times.
-
-No. of allowed errors:
-0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
-
-Bases preceding removed adapters:
-  A: 28.3%
-  C: 24.2%
-  G: 18.9%
-  T: 27.0%
-  none/other: 1.6%
-
-Overview of removed sequences
-length	count	expect	max.err	error counts
-3	7562	6337.6	0	7562
-4	3837	1584.4	0	3837
-5	3163	396.1	0	3163
-6	2686	99.0	0	2686
-7	1285	24.8	0	1285
-8	1149	6.2	0	1149
-9	1095	1.5	0	1082 13
-10	1220	0.4	1	1133 87
-11	1153	0.1	1	1104 49
-12	1119	0.0	1	1089 30
-13	1076	0.0	1	1035 41
-14	1104	0.0	1	1052 52
-15	1093	0.0	1	1050 43
-16	1090	0.0	1	1041 49
-17	1106	0.0	1	1051 55
-18	1068	0.0	1	1009 58 1
-19	1146	0.0	1	1092 54
-20	1063	0.0	2	1002 45 16
-21	1018	0.0	2	955 51 12
-22	1120	0.0	2	1049 64 7
-23	1084	0.0	2	1019 48 17
-24	1054	0.0	2	976 70 8
-25	1007	0.0	2	950 48 9
-26	1089	0.0	2	993 85 11
-27	1117	0.0	2	1034 67 14 2
-28	1092	0.0	2	1018 58 15 1
-29	1048	0.0	2	977 55 11 5
-30	1057	0.0	3	977 63 8 9
-31	1018	0.0	3	939 56 14 9
-32	1041	0.0	3	948 70 13 10
-33	1030	0.0	3	963 50 12 5
-34	1052	0.0	3	959 72 12 9
-35	1079	0.0	3	992 67 14 6
-36	1034	0.0	3	958 60 12 4
-37	1051	0.0	3	976 52 10 13
-38	984	0.0	3	919 49 10 6
-39	1026	0.0	3	953 57 12 3 1
-40	1003	0.0	4	926 56 12 7 2
-41	1060	0.0	4	978 55 16 4 7
-42	1051	0.0	4	962 64 18 4 3
-43	1001	0.0	4	924 52 15 8 2
-44	1041	0.0	4	953 65 11 6 6
-45	1050	0.0	4	944 77 18 8 2 1
-46	1001	0.0	4	914 55 15 10 6 1
-47	1000	0.0	4	917 54 18 7 3 1
-48	1046	0.0	4	946 63 26 11
-49	972	0.0	4	888 61 15 5 3
-50	1024	0.0	5	912 67 19 14 8 4
-51	1037	0.0	5	931 72 12 13 3 6
-52	1008	0.0	5	900 58 22 16 5 7
-53	1057	0.0	5	937 70 27 12 7 4
-54	1035	0.0	5	912 66 26 14 8 9
-55	995	0.0	5	884 63 16 14 10 7 1
-56	1017	0.0	5	873 76 32 16 5 10 5
-57	1044	0.0	5	924 73 16 17 5 8 1
-58	1001	0.0	5	878 75 25 12 4 6 1
-59	1112	0.0	5	964 77 29 16 14 10 2
-60	1134	0.0	6	979 91 34 14 8 5 3
-61	981	0.0	6	850 79 26 10 9 5 2
-62	1009	0.0	6	892 71 21 14 4 5 2
-63	990	0.0	6	871 67 20 17 6 6 3
-64	1030	0.0	6	904 71 23 15 10 3 4
-65	1030	0.0	6	894 76 30 15 10 3 2
-66	1086	0.0	6	934 94 19 15 10 6 8
-67	1014	0.0	6	890 64 32 16 7 2 3
-68	1021	0.0	6	901 68 30 7 7 5 3
-69	1068	0.0	6	930 81 26 14 5 7 5
-70	986	0.0	6	872 66 27 8 7 4 2
-71	1040	0.0	6	919 82 22 4 4 5 4
-72	1060	0.0	6	916 77 40 13 5 6 3
-73	1028	0.0	6	897 80 27 10 8 4 2
-74	1055	0.0	6	909 93 29 11 5 6 2
-75	1033	0.0	6	907 80 18 14 4 7 3
-76	1031	0.0	6	917 73 22 7 3 6 3
-77	999	0.0	6	901 55 26 9 4 3 1
-78	915	0.0	6	806 70 19 7 7 3 3
-79	915	0.0	6	793 78 17 11 7 6 3
-80	800	0.0	6	694 79 13 7 4 2 1
-81	797	0.0	6	697 61 23 7 4 2 3
-82	717	0.0	6	644 50 17 2 1 2 1
-83	686	0.0	6	597 48 29 6 3 3
-84	607	0.0	6	542 42 13 4 2 2 2
-85	661	0.0	6	578 50 16 8 3 5 1
-86	600	0.0	6	542 37 14 2 1 3 1
-87	541	0.0	6	484 33 14 5 3 0 2
-88	596	0.0	6	526 38 20 7 1 2 2
-89	615	0.0	6	517 62 23 8 4 0 1
-90	393	0.0	6	344 27 13 2 6 1
-91	424	0.0	6	385 28 6 0 2 3
-92	519	0.0	6	466 34 10 4 2 1 2
-93	1069	0.0	6	914 88 19 7 7 18 16
-94	3903	0.0	6	3362 317 73 52 23 42 34
-95	1738	0.0	6	1468 135 48 20 8 34 25
-
-=== First read: Adapter 2 ===
-
-Sequence: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG; Type: regular 5'; Length: 63; Trimmed: 10112 times.
-
-No. of allowed errors:
-0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
-
-Overview of removed sequences
-length	count	expect	max.err	error counts
-3	9832	6337.6	0	9832
-4	5	1584.4	0	5
-5	1	396.1	0	1
-6	211	99.0	0	211
-8	22	6.2	0	22
-9	3	1.5	0	3
-10	14	0.4	1	0 14
-11	16	0.1	1	0 16
-12	8	0.0	1	0 8
-
-This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -g TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --discard-trimmed --minimum-length 6 -o adapters/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN_CATGAG_index6.fastq.gz -p adapters/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN_CATGAG_index6.fastq.gz barcodes/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN_CATGAG_30.fastq.gz barcodes/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN_CATGAG_30.fastq.gz
-Running on 1 core
-Trimming 2 adapters with at most 10.0% errors in paired-end legacy mode ...
-Finished in 5.56 s (34 us/read; 1.75 M reads/minute).
-
-=== Summary ===
-
-Total read pairs processed:            161,856
-  Read 1 with adapter:                 140,254 (86.7%)
-  Read 2 with adapter:                       0 (0.0%)
-Pairs that were too short:              53,877 (33.3%)
-Pairs written (passing filters):        21,602 (13.3%)
-
-Total basepairs processed:    31,723,776 bp
-  Read 1:    15,376,320 bp
-  Read 2:    16,347,456 bp
-Total written (filtered):      4,233,992 bp (13.3%)
-  Read 1:     2,052,190 bp
-  Read 2:     2,181,802 bp
-
-=== First read: Adapter 1 ===
-
-Sequence: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG; Type: regular 3'; Length: 63; Trimmed: 140139 times.
-
-No. of allowed errors:
-0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
-
-Bases preceding removed adapters:
-  A: 22.1%
-  C: 32.7%
-  G: 22.1%
-  T: 21.9%
-  none/other: 1.2%
-
-Overview of removed sequences
-length	count	expect	max.err	error counts
-3	133	2529.0	0	133
-4	47	632.2	0	47
-5	26	158.1	0	26
-6	27	39.5	0	27
-7	10	9.9	0	10
-8	2	2.5	0	2
-9	21	0.6	0	19 2
-10	8	0.2	1	7 1
-11	15	0.0	1	13 2
-12	22	0.0	1	18 4
-13	23	0.0	1	20 3
-14	18	0.0	1	17 1
-15	31	0.0	1	28 3
-16	26	0.0	1	22 4
-17	34	0.0	1	26 8
-18	33	0.0	1	28 5
-19	33	0.0	1	26 7
-20	62	0.0	2	46 10 6
-21	49	0.0	2	36 11 2
-22	54	0.0	2	40 11 3
-23	71	0.0	2	55 13 3
-24	82	0.0	2	65 11 6
-25	78	0.0	2	66 9 3
-26	98	0.0	2	88 8 2
-27	104	0.0	2	96 3 5
-28	121	0.0	2	113 7 1
-29	144	0.0	2	137 7
-30	137	0.0	3	125 7 3 2
-31	173	0.0	3	161 8 4
-32	158	0.0	3	136 18 1 3
-33	169	0.0	3	157 7 5
-34	169	0.0	3	153 13 2 1
-35	117	0.0	3	105 10 1 1
-36	124	0.0	3	101 15 5 3
-37	87	0.0	3	78 4 1 3 1
-38	76	0.0	3	68 5 1 2
-39	78	0.0	3	68 7 2 0 1
-40	88	0.0	4	76 6 2 4
-41	115	0.0	4	104 5 3 2 1
-42	108	0.0	4	96 3 4 4 1
-43	108	0.0	4	90 13 1 1 3
-44	67	0.0	4	55 6 1 3 2
-45	75	0.0	4	57 9 7 2
-46	68	0.0	4	56 9 3
-47	72	0.0	4	64 5 2 0 1
-48	100	0.0	4	81 9 7 3
-49	97	0.0	4	82 10 2 1 2
-50	106	0.0	5	93 6 4 0 0 3
-51	111	0.0	5	101 6 2 1 0 1
-52	106	0.0	5	86 10 5 3 0 2
-53	101	0.0	5	88 10 2 0 0 1
-54	90	0.0	5	81 8 1
-55	56	0.0	5	46 7 3
-56	52	0.0	5	44 6 1 0 0 1
-57	54	0.0	5	46 7 0 0 1
-58	37	0.0	5	34 1 1 0 0 1
-59	38	0.0	5	31 2 3 1 0 1
-60	47	0.0	6	36 5 4 0 0 0 2
-61	29	0.0	6	23 3 1 0 1 1
-62	32	0.0	6	28 1 1 1 0 1
-63	32	0.0	6	28 1 2 0 1
-64	35	0.0	6	25 4 3 0 0 0 3
-65	35	0.0	6	30 1 2 0 1 0 1
-66	32	0.0	6	19 5 2 2 2 1 1
-67	34	0.0	6	20 2 1 5 1 4 1
-68	43	0.0	6	18 8 3 1 3 4 6
-69	38	0.0	6	21 3 4 3 2 3 2
-70	69	0.0	6	37 14 6 4 0 6 2
-71	78	0.0	6	43 11 6 7 4 3 4
-72	122	0.0	6	70 19 11 11 5 5 1
-73	152	0.0	6	103 14 8 7 4 10 6
-74	207	0.0	6	139 22 10 8 8 10 10
-75	277	0.0	6	186 31 15 14 4 9 18
-76	304	0.0	6	160 46 35 12 12 18 21
-77	412	0.0	6	274 49 31 19 13 9 17
-78	519	0.0	6	329 65 34 27 27 24 13
-79	819	0.0	6	570 81 59 30 31 28 20
-80	1358	0.0	6	1032 107 62 47 42 32 36
-81	2125	0.0	6	1665 219 81 41 40 33 46
-82	3357	0.0	6	2769 299 109 73 36 37 34
-83	5248	0.0	6	4390 460 183 78 50 49 38
-84	7344	0.0	6	6192 711 224 79 45 52 41
-85	7943	0.0	6	6840 674 210 93 51 35 40
-86	17625	0.0	6	15505 1371 381 145 90 72 61
-87	14447	0.0	6	12815 1008 313 120 58 74 59
-88	9560	0.0	6	8477 684 200 80 34 40 45
-89	9630	0.0	6	8527 731 198 63 36 40 35
-90	9158	0.0	6	8154 640 156 63 30 57 58
-91	7234	0.0	6	6440 511 136 43 33 36 35
-92	6725	0.0	6	5992 466 132 49 21 34 31
-93	14908	0.0	6	13089 1116 334 138 64 98 69
-94	14205	0.0	6	12557 1082 245 130 68 67 56
-95	1647	0.0	6	1477 109 28 8 5 11 9
-
-=== First read: Adapter 2 ===
-
-Sequence: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG; Type: regular 5'; Length: 63; Trimmed: 115 times.
-
-No. of allowed errors:
-0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
-
-Overview of removed sequences
-length	count	expect	max.err	error counts
-3	84	2529.0	0	84
-4	21	632.2	0	21
-5	4	158.1	0	4
-6	1	39.5	0	1
-10	1	0.2	1	0 1
-11	2	0.0	1	0 2
-56	1	0.0	5	0 0 0 0 0 1
-57	1	0.0	5	0 0 0 0 0 1
-
-This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG -g TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG --discard-trimmed --minimum-length 6 -o adapters/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN_none_index12.fastq.gz -p adapters/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN_none_index12.fastq.gz barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN_none_30.fastq.gz barcodes/B_SCBLESS_C1_3_PR_3_S1_L001_R2_D4VBN_none_30.fastq.gz
-Running on 1 core
-Trimming 2 adapters with at most 10.0% errors in paired-end legacy mode ...
-Finished in 2.21 s (37 us/read; 1.62 M reads/minute).
-
-=== Summary ===
-
-Total read pairs processed:             59,580
-  Read 1 with adapter:                  36,078 (60.6%)
-  Read 2 with adapter:                       0 (0.0%)
-Pairs that were too short:               6,450 (10.8%)
-Pairs written (passing filters):        23,502 (39.4%)
-
-Total basepairs processed:    12,035,160 bp
-  Read 1:     6,017,580 bp
-  Read 2:     6,017,580 bp
-Total written (filtered):      4,747,404 bp (39.4%)
-  Read 1:     2,373,702 bp
-  Read 2:     2,373,702 bp
-
-=== First read: Adapter 1 ===
-
-Sequence: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG; Type: regular 3'; Length: 63; Trimmed: 36070 times.
-
-No. of allowed errors:
-0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
-
-Bases preceding removed adapters:
-  A: 20.5%
-  C: 26.1%
-  G: 29.5%
-  T: 20.8%
-  none/other: 3.1%
-
-Overview of removed sequences
-length	count	expect	max.err	error counts
-3	34	930.9	0	34
-4	511	232.7	0	511
-5	8	58.2	0	8
-6	5	14.5	0	5
-7	35	3.6	0	35
-8	60	0.9	0	60
-9	6	0.2	0	6
-10	45	0.1	1	44 1
-11	46	0.0	1	43 3
-13	133	0.0	1	121 12
-14	26	0.0	1	26
-15	76	0.0	1	73 3
-16	175	0.0	1	155 20
-17	232	0.0	1	215 17
-18	32	0.0	1	27 5
-19	41	0.0	1	37 4
-20	23	0.0	2	21 2
-21	96	0.0	2	90 1 5
-22	31	0.0	2	27 3 1
-23	47	0.0	2	39 8
-24	23	0.0	2	22 0 1
-25	18	0.0	2	17 1
-26	34	0.0	2	31 2 1
-27	104	0.0	2	100 4
-28	33	0.0	2	32 0 1
-29	3	0.0	2	3
-30	40	0.0	3	38 1 1
-31	61	0.0	3	58 1 2
-32	33	0.0	3	33
-33	125	0.0	3	116 8 1
-34	51	0.0	3	46 3 2
-35	10	0.0	3	9 0 1
-36	13	0.0	3	13
-37	29	0.0	3	22 1 1 5
-38	13	0.0	3	9 1 1 2
-39	15	0.0	3	13 0 1 0 1
-40	74	0.0	4	63 5 2 1 3
-41	72	0.0	4	64 4 1 1 2
-42	80	0.0	4	73 6 1
-43	91	0.0	4	77 9 2 2 1
-44	47	0.0	4	39 5 2 1
-45	76	0.0	4	66 6 4
-46	76	0.0	4	67 5 2 2
-47	42	0.0	4	38 3 1
-48	49	0.0	4	40 6 0 1 2
-49	89	0.0	4	77 8 3 0 1
-50	62	0.0	5	56 4 0 1 0 1
-51	57	0.0	5	49 3 2 3
-52	65	0.0	5	58 7
-53	55	0.0	5	44 2 4 2 0 3
-54	61	0.0	5	52 6 0 1 1 1
-55	36	0.0	5	34 2
-56	41	0.0	5	32 6 2 1
-57	22	0.0	5	17 3 1 0 0 1
-58	41	0.0	5	38 3
-59	37	0.0	5	36 0 0 0 0 1
-60	34	0.0	6	31 2 0 1
-61	20	0.0	6	18 1 0 1
-62	17	0.0	6	15 2
-63	38	0.0	6	31 4 0 2 1
-64	26	0.0	6	23 2 0 1
-65	35	0.0	6	28 2 0 2 0 3
-66	29	0.0	6	26 1 0 0 0 1 1
-67	51	0.0	6	45 4 1 0 0 1
-68	44	0.0	6	43 1
-69	34	0.0	6	27 2 2 1 0 1 1
-70	26	0.0	6	19 3 0 2 0 2
-71	32	0.0	6	21 3 0 4 0 0 4
-72	18	0.0	6	9 2 2 2 0 1 2
-73	24	0.0	6	15 2 1 2 1 2 1
-74	42	0.0	6	28 2 5 1 3 1 2
-75	45	0.0	6	34 5 1 3 0 1 1
-76	64	0.0	6	43 5 7 2 5 1 1
-77	81	0.0	6	56 6 6 3 4 2 4
-78	104	0.0	6	66 13 8 4 5 3 5
-79	163	0.0	6	115 13 13 5 6 3 8
-80	237	0.0	6	181 28 8 5 4 3 8
-81	303	0.0	6	238 35 6 4 7 7 6
-82	532	0.0	6	432 53 18 6 10 6 7
-83	739	0.0	6	608 62 25 15 8 12 9
-84	813	0.0	6	693 80 15 8 4 7 6
-85	1198	0.0	6	994 130 30 10 12 11 11
-86	1354	0.0	6	1152 114 38 17 10 17 6
-87	1333	0.0	6	1152 111 26 9 9 19 7
-88	1608	0.0	6	1438 113 27 7 4 13 6
-89	1814	0.0	6	1628 125 29 9 3 14 6
-90	1865	0.0	6	1658 143 29 7 7 11 10
-91	2072	0.0	6	1855 156 24 8 6 18 5
-92	2680	0.0	6	2399 214 33 9 8 8 9
-93	2427	0.0	6	2135 208 33 14 7 18 12
-94	3885	0.0	6	3473 289 61 20 7 20 15
-95	2393	0.0	6	2152 185 25 13 6 6 6
-96	2148	0.0	6	1928 168 33 6 3 7 3
-97	1053	0.0	6	923 97 19 4 3 6 1
-98	716	0.0	6	642 55 13 0 0 4 2
-99	834	0.0	6	725 79 11 3 0 11 5
-100	583	0.0	6	495 64 8 3 2 8 3
-101	1116	0.0	6	979 98 22 5 4 5 3
-
-=== First read: Adapter 2 ===
-
-Sequence: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACCTTGTAATCTCGTATGCCGTCTTCTGCTTG; Type: regular 5'; Length: 63; Trimmed: 8 times.
-
-No. of allowed errors:
-0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
-
-Overview of removed sequences
-length	count	expect	max.err	error counts
-4	8	232.7	0	8
-
-This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG -g TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --discard-trimmed --minimum-length 6 -o adapters/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN_none_index6.fastq.gz -p adapters/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN_none_index6.fastq.gz barcodes/B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN_none_30.fastq.gz barcodes/B_SCBLESS_NB_3_RT_S2_L001_R2_D4VBN_none_30.fastq.gz
-Running on 1 core
-Trimming 2 adapters with at most 10.0% errors in paired-end legacy mode ...
-Finished in 1.54 s (36 us/read; 1.65 M reads/minute).
-
-=== Summary ===
-
-Total read pairs processed:             42,422
-  Read 1 with adapter:                  33,008 (77.8%)
-  Read 2 with adapter:                       0 (0.0%)
-Pairs that were too short:               6,219 (14.7%)
-Pairs written (passing filters):         9,414 (22.2%)
-
-Total basepairs processed:     8,569,244 bp
-  Read 1:     4,284,622 bp
-  Read 2:     4,284,622 bp
-Total written (filtered):      1,901,628 bp (22.2%)
-  Read 1:       950,814 bp
-  Read 2:       950,814 bp
-
-=== First read: Adapter 1 ===
-
-Sequence: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG; Type: regular 3'; Length: 63; Trimmed: 32977 times.
-
-No. of allowed errors:
-0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
-
-Bases preceding removed adapters:
-  A: 22.3%
-  C: 27.9%
-  G: 22.3%
-  T: 22.9%
-  none/other: 4.6%
-
-Overview of removed sequences
-length	count	expect	max.err	error counts
-3	352	662.8	0	352
-4	141	165.7	0	141
-5	92	41.4	0	92
-6	95	10.4	0	95
-7	106	2.6	0	106
-8	134	0.6	0	134
-9	195	0.2	0	195
-10	141	0.0	1	136 5
-11	64	0.0	1	63 1
-12	39	0.0	1	37 2
-13	38	0.0	1	36 2
-14	39	0.0	1	36 3
-15	35	0.0	1	32 3
-16	35	0.0	1	35
-17	37	0.0	1	35 2
-18	33	0.0	1	30 3
-19	40	0.0	1	37 3
-20	39	0.0	2	36 3
-21	50	0.0	2	46 4
-22	64	0.0	2	58 4 2
-23	30	0.0	2	28 1 1
-24	46	0.0	2	43 3
-25	41	0.0	2	34 6 1
-26	56	0.0	2	53 3
-27	45	0.0	2	40 4 1
-28	62	0.0	2	56 6
-29	39	0.0	2	35 3 0 1
-30	68	0.0	3	65 2 1
-31	52	0.0	3	47 4 1
-32	61	0.0	3	57 4
-33	68	0.0	3	64 3 1
-34	50	0.0	3	46 3 1
-35	47	0.0	3	43 2 2
-36	44	0.0	3	40 3 0 1
-37	50	0.0	3	40 9 1
-38	35	0.0	3	34 1
-39	43	0.0	3	39 1 1 2
-40	40	0.0	4	37 3
-41	38	0.0	4	34 1 0 1 2
-42	33	0.0	4	31 1 1
-43	50	0.0	4	49 0 1
-44	41	0.0	4	37 3 1
-45	57	0.0	4	54 2 1
-46	69	0.0	4	66 2 1
-47	42	0.0	4	38 3 1
-48	38	0.0	4	34 2 2
-49	47	0.0	4	42 4 0 1
-50	42	0.0	5	39 2 1
-51	47	0.0	5	44 2 1
-52	39	0.0	5	36 3
-53	55	0.0	5	45 5 2 1 1 1
-54	82	0.0	5	75 4 2 0 0 1
-55	49	0.0	5	41 6 1 0 0 1
-56	42	0.0	5	39 1 1 0 0 1
-57	49	0.0	5	38 7 3 1
-58	49	0.0	5	47 1 1
-59	58	0.0	5	53 2 2 0 0 1
-60	46	0.0	6	42 3 1
-61	37	0.0	6	32 2 0 2 1
-62	33	0.0	6	30 2 1
-63	49	0.0	6	46 2 1
-64	49	0.0	6	42 4 2 1
-65	58	0.0	6	49 5 2 1 0 1
-66	60	0.0	6	53 5 1 1
-67	45	0.0	6	35 8 0 0 1 1
-68	61	0.0	6	47 6 4 0 2 1 1
-69	52	0.0	6	44 5 1 1 1
-70	51	0.0	6	42 5 0 0 1 2 1
-71	68	0.0	6	57 9 0 1 1
-72	67	0.0	6	51 8 5 0 2 1
-73	68	0.0	6	60 1 1 2 1 0 3
-74	71	0.0	6	56 9 2 2 1 0 1
-75	75	0.0	6	61 5 2 2 2 0 3
-76	74	0.0	6	58 3 7 1 0 3 2
-77	92	0.0	6	74 11 2 0 2 1 2
-78	107	0.0	6	89 6 2 2 3 3 2
-79	138	0.0	6	108 10 6 4 3 5 2
-80	175	0.0	6	136 9 7 4 6 8 5
-81	233	0.0	6	190 26 8 5 1 2 1
-82	333	0.0	6	269 29 9 11 5 7 3
-83	484	0.0	6	393 43 17 13 6 8 4
-84	697	0.0	6	574 61 33 9 12 3 5
-85	1110	0.0	6	955 81 31 17 9 8 9
-86	1283	0.0	6	1120 112 33 7 3 4 4
-87	1435	0.0	6	1279 104 29 8 2 6 7
-88	1603	0.0	6	1439 108 29 9 5 8 5
-89	1833	0.0	6	1632 139 28 20 1 7 6
-90	2008	0.0	6	1823 126 30 9 3 11 6
-91	2144	0.0	6	1970 105 33 12 8 9 7
-92	2285	0.0	6	2070 141 39 12 5 9 9
-93	2214	0.0	6	1979 152 35 18 2 14 14
-94	2502	0.0	6	2219 179 48 20 5 23 8
-95	1545	0.0	6	1374 113 24 8 8 9 9
-96	1093	0.0	6	974 79 12 7 4 8 9
-97	957	0.0	6	853 73 21 3 0 3 4
-98	512	0.0	6	460 36 9 2 1 3 1
-99	1350	0.0	6	1193 111 28 6 8 2 2
-100	798	0.0	6	695 78 18 3 1 2 1
-101	1509	0.0	6	1311 140 26 20 3 4 5
-
-=== First read: Adapter 2 ===
-
-Sequence: TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG; Type: regular 5'; Length: 63; Trimmed: 31 times.
-
-No. of allowed errors:
-0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-59 bp: 5; 60-63 bp: 6
-
-Overview of removed sequences
-length	count	expect	max.err	error counts
-3	26	662.8	0	26
-4	4	165.7	0	4
-10	1	0.0	1	0 1
-
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.

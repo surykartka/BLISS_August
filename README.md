@@ -151,20 +151,32 @@ Statistics for the samples:
 
 * `B_SCBLESS_C1_3_PR_3_S1_L001_R1_D4VBN.fastq`:
 	* starting with `AGACTC` ("PR_3"):
-		* 41,145 (43.0%) reads have index 12 (rev complement) in R1
+		* 43,364 (45.3%) reads have no adapters, while the remaining reads:
+			* 41,145 (43.0%) reads have index 12 (rev complement) in R1
+			* 49,297 (51.5%) reads have RNA PCR primer (rev complement) in R2
 	* starting with `CATGAG` ("C1_3"):
-		* 170,865 (87.5%) reads have index 12 (rev complement) in R1
+		* 22,219 (11.4%) reads have no adapters, while the remaining reads:
+			* 170,865 (87.5%) reads have index 12 (rev complement) in R1
+			* 161,819 (82.9%) reads have RNA PCR primer (rev complement) in R2
 	* with no barcode:
-		* 36,078 (60.6%) reads have index 12 (rev complement) in R1
+		* 17,434 (29.3%) reads have no adapters, while the remaining reads:
+			* 36,078 (60.6%) reads have index 12 (rev complement) in R1
+			* 39,242 (65.9%) reads have RNA PCR primer (rev complement) in R2
 * `B_SCBLESS_NB_3_RT_S2_L001_R1_D4VBN.fastq`:
 	* starting with `AGACTC` ("RT"):
-		* 118,774 (29.3%) reads have index 6 (rev complement) in R1:
-			* out of the reads with no adapter, 90.26% can be mapped to the human genome
+		* 268,976 (66.3%) reads have no adapters, while the remaining reads:
+			* 118,774 (29.3%) reads have index 6 (rev complement) in R1
+			* 108,732 (26.8%) reads have RNA PCR primer (rev complement) in R2
+			* out of the reads with no adapter, 90.76% can be mapped to the human genome
 	* starting with `CATGAG` ("NB_3"):
-		* 140,254 (86.7%) reads have index 6 (rev complement) in R1:
-			* out of the reads with no adapter, 22.89% can be mapped to the human genome
+		* 19,628 (12.1%) reads have no adapters, while the remaining reads:
+			* 140,254 (86.7%) reads have index 6 (rev complement) in R1
+			* 133,486 (82.5%) reads have RNA PCR primer (rev complement) in R2
 	* with no barcode:
-		* 33,008 (77.8%) reads have index 6 (rev complement) in R1
+		* 8,739 (20.6%) reads have no adapters, while the remaining reads:
+			* 33,008 (77.8%) reads have index 6 (rev complement) in R1
+			* 31,285 (73.7%) reads have RNA PCR primer (rev complement) in R2
+		
 
 ---
 
